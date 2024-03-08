@@ -29,4 +29,5 @@ struct PDU
     int caMsg[];        // 实际信息
 };
 ```
-
+## Day03：
+**连接数据库Mysql**
