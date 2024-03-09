@@ -22,7 +22,15 @@ public slots:
     void showConnect();
 
 private slots:
-    void on_send_pb_clicked();
+    // void on_send_pb_clicked();
+
+    void on_Login_pb_clicked();
+
+    void on_reg_pb_clicked();
+
+    void on_cancel_pb_clicked();
+
+    void recvMsg();
 
 private:
     Ui::TcpClient *ui;

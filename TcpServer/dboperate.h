@@ -13,6 +13,9 @@ public:
     static DBOperate& getInstance();
     void init();
     ~DBOperate();
+
+    bool handleRegister(const char *name, const char *pwd);
+
 signals:
 
 public slots:

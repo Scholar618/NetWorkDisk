@@ -41,3 +41,16 @@ DBOperate::~DBOperate()
 {
     m_db.close();
 }
+
+bool DBOperate::handleRegister(const char *name, const char *pwd)
+{
+    if(name == NULL || pwd == NULL)
+    {
+        qDebug() << "name or pwd is null!";
+        return false;
+    }
+    QString data = QString("insert into userInfo(name, pwd) values('\%1\', '\%2\');").arg(name).arg(pwd);
+    qDebug() << data;
+    QSqlQuery query;
+    return query.exec(data);
+}
